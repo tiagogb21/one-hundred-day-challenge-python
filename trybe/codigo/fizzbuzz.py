@@ -8,9 +8,9 @@
 
 # Numeros divisiveis por 3 e 5 devem aparecer como 'FizzBuzz' ao inves do numero';
 
-def fizz_buzz(n):
+def fizzbuzz(n):
     store_result = [];
-    for index in range(1, n):
+    for index in range(1, n+1):
         divisible_by_three = index % 3 == 0;
         divisible_by_five = index % 5 == 0;
         if (divisible_by_three and divisible_by_five):
@@ -22,5 +22,3 @@ def fizz_buzz(n):
         else:
             store_result.append(index)
     return store_result
-    
-print(fizz_buzz(30))
